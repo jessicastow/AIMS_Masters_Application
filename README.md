@@ -48,13 +48,15 @@ def count_paths(input_string):
   return number_of_paths
 ```
 
-If your code was called with
+If your code was called with:
 ```
 input_string = 'A . . .\n. . . B'
 number_of_paths = count_paths(input_string)
 print(number_of_paths)
 ```
-the number 0 should be printed. If your code was called with
+the number 0 should be printed. 
+
+If your code was called with:
 ```
 input_string = 'A . . .\n. . . .\n. . . .\n. . x B'
 number_of_paths = count_paths(input_string)
