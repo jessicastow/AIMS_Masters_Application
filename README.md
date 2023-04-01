@@ -9,7 +9,7 @@ Sometimes, points are marked as “x”, and the robot is not allowed to visit t
 
 In how many ways can the robot move from A to B and visit all points along the way?
 
-For example, in the following grid, represented in text as
+For example, in the following grid, represented in text as:
 ```
 A . .
 . . B
@@ -18,7 +18,7 @@ there is only one path from A to B:
 
 ![image](https://user-images.githubusercontent.com/56385852/229277441-a8eabe94-31fd-4d67-8e66-595bab987a09.png)
 
-In the following grid, represented in text as
+In the following grid, represented in text as:
 ```
 A . .
 x x B
@@ -27,7 +27,7 @@ there is still only one path (we're lucky because of the two x's):
 
 ![image](https://user-images.githubusercontent.com/56385852/229277460-c5762d4c-8cda-4836-99a1-193b8746f256.png)
 
-However, in the grid
+However, in the grid:
 ```
 A . .
 . x B
