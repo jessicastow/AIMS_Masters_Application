@@ -1,6 +1,8 @@
 # AIMS Masters Application 2023
 ## Data Structures and Algorithms Coding question as part of the AIMS AI for Science Masters Application 2023
 
+See [Instructions](#Instructions)
+
 This repository contains my solution to the AIMS' AI for Science Masters application coding question for 2023.
 
 ### Instructions
