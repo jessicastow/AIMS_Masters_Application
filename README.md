@@ -5,7 +5,7 @@ This repository contains my solution to the AIMS' AI for Science Masters applica
 
 
 - See the[instructions](#Instructions) for this coding task below.
-- My `aims.py` file can be found [here](https://github.com/jessicastow/AIMS_Masters_Application/blob/main/aims.py).
+- My `aims.py` (coding solution) file can be found [here](https://github.com/jessicastow/AIMS_Masters_Application/blob/main/aims.py).
 - [My coding solution](#My-coding-solution) is outlined and the functions, variables and methodology used are explained.
 - [My bonus question solution](#Bonus-question-solution) is also included. 
 
