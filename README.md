@@ -78,7 +78,7 @@ How much longer do you guess it will take to obtain an answer for a 100x100 grid
 ### My coding solution:
 
 - `count_paths`: this function takes an `input_string` argument, which is a string representing the grid.
-- `grid`: this variable is created by splitting the input string by newline characters (`\n`) and then converting each row into a list of characters.
+- `grid`: used to store the list of lists (rows). This variable is created by splitting the input string by newline characters (`\n`) and then converting each row into a list of characters.
 - `height`: this variable is set to the number of rows in the grid.
 - `width`: this variable is set to the number of columns in the grid. 
 - The `dp` variable is initialized as a 2D array of zeros with dimensions `height` x `width`. This will store the number of paths to each point in the grid.
