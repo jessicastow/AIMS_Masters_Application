@@ -76,6 +76,9 @@ How much longer do you guess it will take to obtain an answer for a 100x100 grid
 # My solution
 
 ### My coding solution:
+
+Below is an explanation behind the functions are variables I used in my`.py` script. 
+
 - `input_string`: the string representing the grid. Can be changed by the user. 
 - `count_paths`: this is a user-defined function takes an `input_string` argument, which is a string representing the grid.
 - `remove_spaces`: this function removes spaces from the `input_string`.
@@ -85,19 +88,18 @@ How much longer do you guess it will take to obtain an answer for a 100x100 grid
 - `nr_points`: calculated by multiplying the `height` with the `width` to determine the total number of points the grid consists of.
 - `nr_of_x`: stores the number of times 'x' appears in the `input_string`.
 - `nr_to_be_visited`: stores the number of cells the robot needs to visit on its journey from point A to point B. Calculated by subtracting `nr_of_x` from `nr_points`. 
-
 - `dfs`: this function takes three arguments: 
   - `curr_i`: the current row,
   - `curr_j`: the current column, and
   - `visited_count`: the number of visited points so far. 
-
 - `visited_counts`: this list is used to store the count of visited points for each valid path.
 
-The base case of the recursion is when the current position is the bottom-right corner of the grid (`curr_i == height-1` and `curr_j == width-1`). In this case, the `visited_count` is appended to the `visited_counts` list and the function returns.
+**More on the depth-first search approach:**
+The base case of the recursion is when the current position is the bottom-right corner of the grid (`curr_i == height-1` and `curr_j == width-1`), i.e. it is at point B. In this case, the `visited_count` is appended to the `visited_counts` list and the function returns.
 
 Before visiting a new cell, we mark it as visited by changing its value to 'x'. Then, we explore all possible directions from the current position by checking if the adjacent cells are not marked as 'x'. If so, we recursively call the `dfs` function on the adjacent cell with the updated `visited_count`. After all possible paths from the current position are explored, we mark the cell as unvisited by changing its value back to '.'.
 
-Overall, this DFS algorithm explores all possible paths from the top-left corner to the bottom-right corner of the grid and counts the number of visited points for each valid path.
+This depth-first search algorithm explores all possible paths from the top-left corner (point A) to the bottom-right corner (point B) of the grid, and counts the number of visited points for each valid path.
 
 ### Bonus question solution:
 
