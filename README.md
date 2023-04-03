@@ -65,6 +65,9 @@ print(number_of_paths)
 a number larger than one should be printed. We’ll leave it to you to determine what it is.
 
 Your code doesn’t have to run on grids larger than 10x10 points, and should only make use of the Python Standard Library.
+### Bonus question
+Can you say anything about the complexity of the problem?
 
+How much longer do you guess it will take to obtain an answer for a 100x100 grid compared to a 10x10 grid? And a 1x10 grid compared to a 10x10 grid? Can you postulate some general rules of thumb?
 ### My approach, explained
 
