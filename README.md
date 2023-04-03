@@ -71,8 +71,11 @@ Can you say anything about the complexity of the problem?
 
 How much longer do you guess it will take to obtain an answer for a 100x100 grid compared to a 10x10 grid? And a 1x10 grid compared to a 10x10 grid? Can you postulate some general rules of thumb?
 
-# My answer
+# My solution
 
+### My coding solution:
+
+### Bonus question solution:
 Time complexity: the algorithm iterates over each cell in `grid` once and for each cell it performs a constant number of operations. So, the time complexity of this algorithm is O(rc).
 
 Space complexity: the algorithm uses a matrix of size `r` x `c`, which requires O(rc) space.
@@ -83,5 +86,4 @@ The time it takes to calculate the number of possible paths from A to B increase
 1. the size of the grid increases.
 2. the number of obstacles ('x') in the grid increases.
 
-### My approach, explained
 
