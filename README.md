@@ -89,6 +89,15 @@ How much longer do you guess it will take to obtain an answer for a 100x100 grid
 - Otherwise, if the current point has been visited and is not marked as an 'x', the number of paths to the current point is calculated by adding the number of paths to the point above it and the point to the left of it (if they exist and have not been marked as 'x').
 - The current point is added to the `visited` set.
 - The function returns the number of paths to the bottom right point (`dp[-1][-1]`) and the set of visited points.
+- This is the implementation of a recursive depth-first search (DFS) algorithm to traverse all possible paths in the grid.
+
+The `dfs` function takes three arguments: the current row `curr_i`, the current column `curr_j`, and the number of visited points `visited_count` so far. The `visited_counts` list is used to store the count of visited points for each valid path.
+
+The base case of the recursion is when the current position is the bottom-right corner of the grid (`curr_i == height-1` and `curr_j == width-1`). In this case, the `visited_count` is appended to the `visited_counts` list and the function returns.
+
+Before visiting a new cell, we mark it as visited by changing its value to 'x'. Then, we explore all possible directions from the current position by checking if the adjacent cells are not marked as 'x'. If so, we recursively call the `dfs` function on the adjacent cell with the updated `visited_count`. After all possible paths from the current position are explored, we mark the cell as unvisited by changing its value back to '.'.
+
+Overall, this DFS algorithm explores all possible paths from the top-left corner to the bottom-right corner of the grid and counts the number of visited points for each valid path.
 
 ### Bonus question solution:
 
