@@ -83,7 +83,7 @@ How much longer do you guess it will take to obtain an answer for a 100x100 grid
 
 **Space complexity:** the algorithm uses a matrix of size `r` x `c`, which requires *O(rc)* space.
 
-**General rules of thumb: **
+**General rules of thumb:**
 
 The time it takes to calculate the number of possible paths from A to B increases as: 
 1. the size of the grid increases.
