@@ -76,7 +76,7 @@ How much longer do you guess it will take to obtain an answer for a 100x100 grid
 # My solution
 
 ### My coding solution:
-
+- `input_string`: the string representing the grid. Can be changed by the user. 
 - `count_paths`: this is a user-defined function takes an `input_string` argument, which is a string representing the grid.
 - `remove_spaces`: this function removes spaces from the `input_string`.
 - `grid`: is used to store the list of lists (rows). This variable is created by splitting the input string by newline characters (`\n`) and then converting each row into a list of characters.
@@ -85,16 +85,13 @@ How much longer do you guess it will take to obtain an answer for a 100x100 grid
 - `nr_points`: calculated by multiplying the `height` with the `width` to determine the total number of points the grid consists of.
 - `nr_of_x`: stores the number of times 'x' appears in the `input_string`.
 - `nr_to_be_visited`: stores the number of cells the robot needs to visit on its journey from point A to point B. Calculated by subtracting `nr_of_x` from `nr_points`. 
-- `dp`: this variable is initialized as a 2D array of zeros with dimensions `height` x `width`. This will store the number of paths to each point in the grid. The starting point at the top left corner of the grid is set to have 1 path (`dp[0][0] = 1`).
 
-- The nested `for` loops iterate over each point in the grid, starting from the top left and moving row by row.
-- If the current point is marked as an 'x' or has not been visited before, then there are no paths to that point (`dp[i][j] = 0`).
-- Otherwise, if the current point has been visited and is not marked as an 'x', the number of paths to the current point is calculated by adding the number of paths to the point above it and the point to the left of it (if they exist and have not been marked as 'x').
-- The current point is added to the `visited` set.
-- The function returns the number of paths to the bottom right point (`dp[-1][-1]`) and the set of visited points.
-- This is the implementation of a recursive depth-first search (DFS) algorithm to traverse all possible paths in the grid.
+- `dfs`: this function takes three arguments: 
+  - `curr_i`: the current row,
+  - `curr_j`: the current column, and
+  - `visited_count`: the number of visited points so far. 
 
-The `dfs` function takes three arguments: the current row `curr_i`, the current column `curr_j`, and the number of visited points `visited_count` so far. The `visited_counts` list is used to store the count of visited points for each valid path.
+- `visited_counts`: this list is used to store the count of visited points for each valid path.
 
 The base case of the recursion is when the current position is the bottom-right corner of the grid (`curr_i == height-1` and `curr_j == width-1`). In this case, the `visited_count` is appended to the `visited_counts` list and the function returns.
 
