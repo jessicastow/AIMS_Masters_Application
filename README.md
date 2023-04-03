@@ -1,6 +1,8 @@
 # AIMS Masters Application 2023
 ## Data Structures and Algorithms Coding question as part of the AIMS AI for Science Masters Application 2023
 
+This repository contains my solution to the AIMS' AI for Science Masters application coding question.
+
 ### Instructions
 
 A robot starts on a point marked “A” on a rectangular grid of points. The starting point is always the top left point on the grid. The robot can move left, right, up or down, moving from one point to the next. By moving in steps going left, right, up or down, the robot would like to reach a point marked “B”, which is always the bottom right point in the grid.
@@ -85,5 +87,3 @@ General rules of thumb:
 The time it takes to calculate the number of possible paths from A to B increases as: 
 1. the size of the grid increases.
 2. the number of obstacles ('x') in the grid increases.
-
-
