@@ -78,11 +78,12 @@ How much longer do you guess it will take to obtain an answer for a 100x100 grid
 ### My coding solution:
 
 ### Bonus question solution:
-Time complexity: the algorithm iterates over each cell in `grid` once and for each cell it performs a constant number of operations. So, the time complexity of this algorithm is O(rc).
 
-Space complexity: the algorithm uses a matrix of size `r` x `c`, which requires O(rc) space.
+**Time complexity:** the algorithm iterates over each cell in `grid` once and for each cell it performs a constant number of operations. So, the time complexity of this algorithm is *O(rc)*.
 
-General rules of thumb: 
+**Space complexity:** the algorithm uses a matrix of size `r` x `c`, which requires *O(rc)* space.
+
+**General rules of thumb: **
 
 The time it takes to calculate the number of possible paths from A to B increases as: 
 1. the size of the grid increases.
