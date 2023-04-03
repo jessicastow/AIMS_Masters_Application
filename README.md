@@ -77,13 +77,16 @@ How much longer do you guess it will take to obtain an answer for a 100x100 grid
 
 ### My coding solution:
 
-- `count_paths`: this function takes an `input_string` argument, which is a string representing the grid.
-- `grid`: used to store the list of lists (rows). This variable is created by splitting the input string by newline characters (`\n`) and then converting each row into a list of characters.
-- `height`: this variable is set to the number of rows in the grid.
-- `width`: this variable is set to the number of columns in the grid. 
-- The `dp` variable is initialized as a 2D array of zeros with dimensions `height` x `width`. This will store the number of paths to each point in the grid.
-- The starting point at the top left corner of the grid is set to have 1 path (`dp[0][0] = 1`).
-- `visited`: this set is initialized to keep track of which points in the grid have been visited so far. The starting point is added to the set.
+- `count_paths`: this is a user-defined function takes an `input_string` argument, which is a string representing the grid.
+- `remove_spaces`: this function removes spaces from the `input_string`.
+- `grid`: is used to store the list of lists (rows). This variable is created by splitting the input string by newline characters (`\n`) and then converting each row into a list of characters.
+- `height`: this variable is set to the number of rows in the given grid.
+- `width`: this variable is set to the number of columns in the given grid. 
+- `nr_points`: calculated by multiplying the `height` with the `width` to determine the total number of points the grid consists of.
+- `nr_of_x`: stores the number of times 'x' appears in the `input_string`.
+- `nr_to_be_visited`: stores the number of cells the robot needs to visit on its journey from point A to point B. Calculated by subtracting `nr_of_x` from `nr_points`. 
+- `dp`: this variable is initialized as a 2D array of zeros with dimensions `height` x `width`. This will store the number of paths to each point in the grid. The starting point at the top left corner of the grid is set to have 1 path (`dp[0][0] = 1`).
+
 - The nested `for` loops iterate over each point in the grid, starting from the top left and moving row by row.
 - If the current point is marked as an 'x' or has not been visited before, then there are no paths to that point (`dp[i][j] = 0`).
 - Otherwise, if the current point has been visited and is not marked as an 'x', the number of paths to the current point is calculated by adding the number of paths to the point above it and the point to the left of it (if they exist and have not been marked as 'x').
