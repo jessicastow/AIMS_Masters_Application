@@ -95,11 +95,12 @@ Below is an explanation behind the functions are variables I used in my`.py` scr
 - `visited_counts`: this list is used to store the count of visited points for each valid path.
 
 **More on the depth-first search approach:**
-The base case of the recursion is when the current position is the bottom-right corner of the grid (`curr_i == height-1` and `curr_j == width-1`), i.e. it is at point B. In this case, the `visited_count` is appended to the `visited_counts` list and the function returns.
 
-Before visiting a new cell, we mark it as visited by changing its value to `x`. Then, we explore all possible directions from the current position by checking if the adjacent cells are not marked as `x`. If so, we recursively call the `dfs` function on the adjacent cell with the updated `visited_count`. After all possible paths from the current position are explored, we mark the cell as unvisited by changing its value back to `.`.
+- This depth-first search algorithm explores all possible paths from the top-left corner (point A) to the bottom-right corner (point B) of the grid, and counts the number of visited points for each valid path.
 
-This depth-first search algorithm explores all possible paths from the top-left corner (point A) to the bottom-right corner (point B) of the grid, and counts the number of visited points for each valid path.
+- The base case of the recursion is when the current position is the bottom-right corner of the grid (`curr_i == height-1` and `curr_j == width-1`), i.e. it is at point B. In this case, the `visited_count` is appended to the `visited_counts` list and the function returns.
+
+- Before visiting a new cell, we mark it as visited by changing its value to `x`. Then, we explore all possible directions from the current position by checking if the adjacent cells are not marked as `x`. If so, we recursively call the `dfs` function on the adjacent cell with the updated `visited_count`. After all possible paths from the current position are explored, we mark the cell as unvisited by changing its value back to `.`.
 
 ### Bonus question solution:
 
