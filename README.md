@@ -77,6 +77,19 @@ How much longer do you guess it will take to obtain an answer for a 100x100 grid
 
 ### My coding solution:
 
+- `count_paths`: this function takes an `input_string` argument, which is a string representing the grid.
+- `grid`: this variable is created by splitting the input string by newline characters (`\n`) and then converting each row into a list of characters.
+- `height`: this variable is set to the number of rows in the grid.
+- `width`: this variable is set to the number of columns in the grid. 
+- The `dp` variable is initialized as a 2D array of zeros with dimensions `height` x `width`. This will store the number of paths to each point in the grid.
+- The starting point at the top left corner of the grid is set to have 1 path (`dp[0][0] = 1`).
+- `visited`: this set is initialized to keep track of which points in the grid have been visited so far. The starting point is added to the set.
+- The nested `for` loops iterate over each point in the grid, starting from the top left and moving row by row.
+- If the current point is marked as an 'x' or has not been visited before, then there are no paths to that point (`dp[i][j] = 0`).
+- Otherwise, if the current point has been visited and is not marked as an 'x', the number of paths to the current point is calculated by adding the number of paths to the point above it and the point to the left of it (if they exist and have not been marked as 'x').
+- The current point is added to the `visited` set.
+- The function returns the number of paths to the bottom right point (`dp[-1][-1]`) and the set of visited points.
+
 ### Bonus question solution:
 
 ⌛ **Time complexity:** the algorithm iterates over each cell in `grid` once and for each cell it performs a constant number of operations. So, the time complexity of this algorithm is *O(rc)*.
