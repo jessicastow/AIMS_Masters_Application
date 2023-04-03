@@ -101,3 +101,7 @@ How much longer do you guess it will take to obtain an answer for a 100x100 grid
 The time it takes to calculate the number of possible paths from A to B increases as: 
 1. the size of the grid increases.
 2. the number of obstacles ('x') in the grid increases.
+
+### References
+
+1. OpenAI. (2023). ChatGPT (GPT-3.5). Retrieved March 31, 2023, from [https://chat.openai.com/]
