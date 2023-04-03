@@ -2,7 +2,8 @@
 ## Data Structures and Algorithms Coding question as part of the AIMS AI for Science Masters Application 2023
 
 See [Instructions](#Instructions)
-[My coding solution](#My-coding-solution:)
+See [My coding solution](#My-coding-solution)
+See [Bonus question solution](#Bonus-question-solution)
 
 This repository contains my solution to the AIMS' AI for Science Masters application coding question for 2023.
 
@@ -78,7 +79,7 @@ How much longer do you guess it will take to obtain an answer for a 100x100 grid
 
 # My solution
 
-### My coding solution:
+### My coding solution
 
 Below is an explanation behind the functions are variables I used in my`.py` script. 
 
@@ -97,7 +98,7 @@ Below is an explanation behind the functions are variables I used in my`.py` scr
   - `visited_count`: the number of visited points so far. 
 - `visited_counts`: this list is used to store the count of visited points for each valid path.
 
-**More on the depth-first search approach:**
+**More on the depth-first search approach**
 
 - This depth-first search algorithm explores all possible paths from the top-left corner (point A) to the bottom-right corner (point B) of the grid, and counts the number of visited points for each valid path.
 
@@ -105,7 +106,7 @@ Below is an explanation behind the functions are variables I used in my`.py` scr
 
 - Before visiting a new cell, we mark it as visited by changing its value to `x`. Then, we explore all possible directions from the current position by checking if the adjacent cells are not marked as `x`. If so, we recursively call the `dfs` function on the adjacent cell with the updated `visited_count`. After all possible paths from the current position are explored, we mark the cell as unvisited by changing its value back to `.`.
 
-### Bonus question solution:
+### Bonus question solution
 
 ⌛ **Time complexity:** the algorithm iterates over each cell in `grid` once and for each cell it performs a constant number of operations. So, the time complexity of this algorithm is *O(rc)*.
 
