@@ -104,4 +104,7 @@ The time it takes to calculate the number of possible paths from A to B increase
 
 ### References
 
-1. OpenAI. (2023). ChatGPT (GPT-3.5). Retrieved March 31, 2023, from [https://chat.openai.com/]
+1. Anmol Agrawal, FreeCodeCamp (n.d.). Learn Dynamic Programming to Solve Coding Challenges. Available at: https://www.freecodecamp.org/news/learn-dynamic-programing-to-solve-coding-challenges/ [Accessed on 23 March 2023].
+2. HackerEarth. (n.d.). Dynamic Programming - 2D Array. Available at: https://www.hackerearth.com/practice/algorithms/dynamic-programming/2-dimensional/tutorial/ [Accessed 24 March 2023].
+3. LeetCode (n.d.). Finding Unique Paths in a Grid With Obstacles - A Dynamic Programming Approach. Available at: https://leetcode.com/problems/unique-paths-ii/solutions/3225310/finding-unique-paths-in-a-grid-with-obstacles-a-dynamic-programming-approach/ [Accessed 24 March 2023]
+4. OpenAI. (2023). ChatGPT (GPT-3.5). Retrieved March 31, 2023, from [https://chat.openai.com/].
